@@ -1,0 +1,39 @@
+rm: cannot remove ‘cuda_server’: No such file or directory
+cuda_server.c: In function ‘thread_consume’:
+cuda_server.c:412:53: warning: passing argument 2 of ‘clock_gettime’ from incompatible pointer type [-Wincompatible-pointer-types]
+             clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &network_time[iter * BATCH_NUM_PER_LOOP + block_id]);
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from cuda_server.c:5:
+/usr/include/time.h:342:66: note: expected ‘struct timespec *’ but argument is of type ‘timespec *’ {aka ‘struct <anonymous> *’}
+ extern int clock_gettime (clockid_t __clock_id, struct timespec *__tp) __THROW;
+                                                 ~~~~~~~~~~~~~~~~~^~~~
+cuda_server.c:421:28: warning: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Wint-conversion]
+                     return -1;
+                            ^
+cuda_server.c:432:50: warning: passing argument 2 of ‘clock_gettime’ from incompatible pointer type [-Wincompatible-pointer-types]
+          clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &cuda_time[iter * BATCH_NUM_PER_LOOP + block_id]);
+                                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from cuda_server.c:5:
+/usr/include/time.h:342:66: note: expected ‘struct timespec *’ but argument is of type ‘timespec *’ {aka ‘struct <anonymous> *’}
+ extern int clock_gettime (clockid_t __clock_id, struct timespec *__tp) __THROW;
+                                                 ~~~~~~~~~~~~~~~~~^~~~
+cuda_server.c: In function ‘main’:
+cuda_server.c:537:10: error: redeclaration of ‘memcpy_time_ns’ with no linkage
+     long memcpy_time_ns[TOTAL_BATCH_NUM];
+          ^~~~~~~~~~~~~~
+cuda_server.c:535:10: note: previous declaration of ‘memcpy_time_ns’ was here
+     long memcpy_time_ns[TOTAL_BATCH_NUM];
+          ^~~~~~~~~~~~~~
+cuda_server.c:542:47: error: incompatible type for argument 1 of ‘diff’
+         memcpy_timespec[i] = diff(network_time[i], cuda_time[i]);
+                                   ~~~~~~~~~~~~^~~
+cuda_server.c:68:24: note: expected ‘timespec’ {aka ‘struct <anonymous>’} but argument is of type ‘timespec *’ {aka ‘struct <anonymous> *’}
+ timespec diff(timespec start, timespec end)
+               ~~~~~~~~~^~~~~
+cuda_server.c:542:61: error: incompatible type for argument 2 of ‘diff’
+         memcpy_timespec[i] = diff(network_time[i], cuda_time[i]);
+                                                    ~~~~~~~~~^~~
+cuda_server.c:68:40: note: expected ‘timespec’ {aka ‘struct <anonymous>’} but argument is of type ‘timespec *’ {aka ‘struct <anonymous> *’}
+ timespec diff(timespec start, timespec end)
+                               ~~~~~~~~~^~~
+======== Error: application not found.

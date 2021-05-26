@@ -1,0 +1,4 @@
+# run this script after server
+rm multiple_connections_network_client_sender
+gcc multiple_connections_network_client_sender.c -lpthread -o multiple_connections_network_client_sender
+./multiple_connections_network_client_sender

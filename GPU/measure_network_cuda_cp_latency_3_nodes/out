@@ -1,0 +1,83 @@
+concurrentKernels: 1
+= 1: Concurrent Kernel Execution
+asyncEngineCount: 3
+> 0: Overlap of Data Transfer and Kernel Execution
+= 2: Concurrent Data Transfers
+Device 0 has compute capability 7.5.
+Before Thread
+Printing Port from Thread 8080
+Printing Port from Thread 8084
+Printing Port from Thread 8088
+Successfully built connection.
+Successfully built connection.
+Successfully built connection.
+Consumed time: 0.230000 seconds, INCLUDING Waiting reader proceess
+Throughput: 0.008492 GB / secConsumed time: 0.230000 seconds, INCLUDING Waiting reader proceess
+Throughput: 0.259001 GB / secConsumed time: 0.210000 seconds, INCLUDING Waiting reader proceess
+Throughput: 0.283668 GB / sec0.000000 0.000000 0.000000 0.000000 0.000000 After Thread
+i = 0 FPGA0 time = 80380336 ns
+i = 0 FPGA1 time = 40231969 ns
+i = 0 CPU0 time = 97120297 ns
+i = 0 memcpy time = 60306152 ns
+i = 1 FPGA0 time = 40014650 ns
+i = 1 FPGA1 time = 41016614 ns
+i = 1 CPU0 time = 55752916 ns
+i = 1 memcpy time = 40515632 ns
+i = 2 FPGA0 time = 35439912 ns
+i = 2 FPGA1 time = 40787134 ns
+i = 2 CPU0 time = 50551573 ns
+i = 2 memcpy time = 38113523 ns
+i = 3 FPGA0 time = 26818740 ns
+i = 3 FPGA1 time = 35218254 ns
+i = 3 CPU0 time = 45141873 ns
+i = 3 memcpy time = 31018497 ns
+i = 4 FPGA0 time = 28601239 ns
+i = 4 FPGA1 time = 26737033 ns
+i = 4 CPU0 time = 37267314 ns
+i = 4 memcpy time = 27669136 ns
+i = 5 FPGA0 time = 28733950 ns
+i = 5 FPGA1 time = 26872342 ns
+i = 5 CPU0 time = 36780408 ns
+i = 5 memcpy time = 27803146 ns
+i = 6 FPGA0 time = 29757657 ns
+i = 6 FPGA1 time = 27512576 ns
+i = 6 CPU0 time = 37795140 ns
+i = 6 memcpy time = 28635116 ns
+i = 7 FPGA0 time = 30751565 ns
+i = 7 FPGA1 time = 27698084 ns
+i = 7 CPU0 time = 38149920 ns
+i = 7 memcpy time = 29224824 ns
+i = 8 FPGA0 time = 30113613 ns
+i = 8 FPGA1 time = 27005731 ns
+i = 8 CPU0 time = 37479690 ns
+i = 8 memcpy time = 28559672 ns
+i = 9 FPGA0 time = 29953231 ns
+i = 9 FPGA1 time = 26991300 ns
+i = 9 CPU0 time = 37454036 ns
+i = 9 memcpy time = 28472265 ns
+i = 10 FPGA0 time = 30321863 ns
+i = 10 FPGA1 time = 27749784 ns
+i = 10 CPU0 time = 37802879 ns
+i = 10 memcpy time = 29035823 ns
+i = 11 FPGA0 time = 30906107 ns
+i = 11 FPGA1 time = 27477201 ns
+i = 11 CPU0 time = 38108115 ns
+i = 11 memcpy time = 29191654 ns
+i = 12 FPGA0 time = 29478247 ns
+i = 12 FPGA1 time = 25947500 ns
+i = 12 CPU0 time = 36493962 ns
+i = 12 memcpy time = 27712873 ns
+i = 13 FPGA0 time = 22442197 ns
+i = 13 FPGA1 time = 19544818 ns
+i = 13 CPU0 time = 29770012 ns
+i = 13 memcpy time = 20993507 ns
+i = 14 FPGA0 time = 13310682 ns
+i = 14 FPGA1 time = 9783901 ns
+i = 14 CPU0 time = 20882263 ns
+i = 14 memcpy time = 11547291 ns
+i = 15 FPGA0 time = 6249740 ns
+i = 15 FPGA1 time = 4897785 ns
+i = 15 CPU0 time = 10993382 ns
+i = 15 memcpy time = 5573762 ns
+
+Average memcpt time per batch: 0.029023 sec = 29.023304 ms = 29023.304688 us = 29023304.000000 ns

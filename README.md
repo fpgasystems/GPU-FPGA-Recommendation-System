@@ -1,2 +1,22 @@
 # GPU-FPGA-Recommendation-System
-FleetRec: Large-Scale Recommendation Inference on Hybrid GPU-FPGA Clusters
+The source code of our paper published in KDD 2021--- "FleetRec: Large-Scale Recommendation Inference on Hybrid GPU-FPGA Clusters".
+
+
+
+There are two folders for the FPGA and GPU implementations. To build the FPGA, refer to the README.md in the folder. The supported device is Alveo U280 and we used an [open-source TCP/IP stack for Vitis](https://github.com/fpgasystems/Vitis_with_100Gbps_TCP-IP). The GPU implementation requires CUDA version of at least 11.0 and should support a wide range of GPU models.
+
+
+
+## Reference
+
+The paper corresponds to this repository:
+
+Jiang, W., He, Z., Zhang, S., Zeng, K., Feng, L., Zhang, J., ... & Alonso, G. (2021, August). FleetRec: Large-Scale Recommendation Inference on Hybrid GPU-FPGA Clusters. In *27th SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2021)*.
+
+The FPGA implementation is based on a previous paper:
+
+Jiang, W., He, Z., Zhang, S., Preußer, T. B., Zeng, K., Feng, L., ... & Alonso, G. (2021). MicroRec: efficient recommendation inference by hardware and data structure solutions. *Proceedings of Machine Learning and Systems*, *3*.
+
+The FPGA network stack we used:
+
+Zhenhao He, Dario Korolija, and Gustavo Alonso. 2021. EasyNet: 100 Gbps Network for HLS. In 2021 31th International Conference on Field Programmable Logic and Applications (FPL)

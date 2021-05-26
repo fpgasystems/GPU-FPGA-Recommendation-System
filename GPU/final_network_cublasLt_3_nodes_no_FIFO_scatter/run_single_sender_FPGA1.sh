@@ -1,0 +1,4 @@
+# run this script after server
+rm FPGA1_multiple_connections_network_client_sender 
+gcc FPGA1_multiple_connections_network_client_sender.c -lpthread -o FPGA1_multiple_connections_network_client_sender
+./FPGA1_multiple_connections_network_client_sender &

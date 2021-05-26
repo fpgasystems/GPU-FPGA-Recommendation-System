@@ -1,0 +1,4 @@
+# run this script after server
+rm  CPU0_multiple_connections_network_client_sender
+gcc CPU0_multiple_connections_network_client_sender.c -lpthread -o CPU0_multiple_connections_network_client_sender
+./CPU0_multiple_connections_network_client_sender &

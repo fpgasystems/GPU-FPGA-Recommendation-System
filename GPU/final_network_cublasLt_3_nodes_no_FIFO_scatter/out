@@ -1,0 +1,23 @@
+concurrentKernels: 1
+= 1: Concurrent Kernel Execution
+asyncEngineCount: 3
+> 0: Overlap of Data Transfer and Kernel Execution
+= 2: Concurrent Data Transfers
+Device 0 has compute capability 7.5.
+Before Thread
+Successfully built connection with CPU0.
+Successfully built connection with CPU0.
+Successfully built connection with CPU0.
+Successfully built connection with CPU0.
+Successfully built connection with FPGA0.
+Successfully built connection with FPGA0.
+Successfully built connection with FPGA0.
+Successfully built connection with FPGA0.
+Successfully built connection with FPGA1.
+batch_count: 0
+Successfully built connection with FPGA1.
+batch_count: 1
+Successfully built connection with FPGA1.
+batch_count: 2
+Successfully built connection with FPGA1.
+batch_count: 3
